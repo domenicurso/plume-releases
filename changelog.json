@@ -1,10 +1,9 @@
 [
   {
     "version": "1.0.0-dummy",
-    "releaseDate": "2050-01-01T00:00:00-04:00",
-    "highlights": "No changes",
+    "releaseDate": "2050-04-20T00:00:00-04:00",
     "changes": {
-      "other": ["Poopoo"]
+      "other": ["No other changes I lied"]
     }
   },
   {
@@ -15,7 +14,8 @@
       "improvements": [
         "Onboarding flow now restricts the window size for better user experience",
         "Fixed a bug where date groupings in the sidebar were improperly ordered",
-        "Respect UI scale for icons and certain elements"
+        "Respect UI scale for icons and certain elements",
+        "The changelog is now fetched from GitHub, so even versions newer than the current version are displayed"
       ]
     }
   },
