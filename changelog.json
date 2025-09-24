@@ -2,7 +2,10 @@
   {
     "version": "1.0.0-dummy",
     "releaseDate": "2050-01-01T00:00:00-04:00",
-    "highlights": "No changes"
+    "highlights": "No changes",
+    "changes": {
+      "other": ["Poopoo"]
+    }
   },
   {
     "version": "1.0.0-beta.8",
