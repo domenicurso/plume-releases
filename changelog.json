@@ -2,8 +2,11 @@
   {
     "version": "1.0.0-beta.8",
     "releaseDate": "2025-09-XXT00:00:00-04:00",
-    "highlights": "",
+    "highlights": "Introduces a new updater that supports automatic updates without having to reinstall the application, along with a new nifty changes and improvements.",
     "changes": {
+      "features": [
+        "Updater"
+      ],
       "improvements": [
         "Onboarding flow now restricts the window size for better user experience",
         "Fixed a bug where date groupings in the sidebar were improperly ordered",
