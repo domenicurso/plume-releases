@@ -1,0 +1,158 @@
+[
+  {
+    "version": "1.0.0-beta.8",
+    "releaseDate": "2025-09-XXT00:00:00-04:00",
+    "highlights": "",
+    "changes": {
+      "improvements": [
+        "Onboarding flow now restricts the window size for better user experience",
+        "Fixed a bug where date groupings in the sidebar were improperly ordered",
+        "Respect UI scale for icons and certain elements"
+      ]
+    }
+  },
+  {
+    "version": "1.0.0-beta.7",
+    "releaseDate": "2025-09-21T00:00:00-04:00",
+    "highlights": "Introduces a welcome experience for new users, makes trove discovery significantly faster, and improves the fullscreen experience.",
+    "changes": {
+      "features": [
+        "New onboarding flow that guides new users through creating their first trove",
+        "Added \"Open existing as trove\" option to convert folders containing markdown files into troves",
+        "Added \"Default trove\" setting to change the behavior of trove selection on startup"
+      ],
+      "improvements": [
+        "Much faster trove discovery on app startup",
+        "Updating a note's title no longer changes the content of the note",
+        "Better error handling when working with files and folders",
+        "Default window size increased for a more comfortable experience",
+        "Fixed a bug where syntax outside of fenced code blocks was not properly highlighted",
+        "Added a shortcut to change troves (⌥⌘O)",
+        "Fixed a bug where line numbers were incorrectly positioned when a line started with # and then immediately text without whitespace",
+        "Tab bar now animates smoothly in and out with height transitions",
+        "Transparency effects automatically disabled in fullscreen mode",
+        "App elements like the tab bar, sidebar, and editor now respect fullscreen mode",
+        "Fixed a bug where pressing Cmd+S would clear the current note"
+      ],
+      "developer": ["Removed theme editor and live preview"]
+    }
+  },
+  {
+    "version": "1.0.0-beta.6",
+    "releaseDate": "2025-09-20T00:00:00-04:00",
+    "highlights": "Introduces Troves, a portable folder-based system for organizing notes with attachments and metadata, alongside a redesigned editor navigation bar and a new reading view and source mode.",
+    "changes": {
+      "features": [
+        "Notes are now stored in folders that contain .md files you can access directly",
+        "Trove browser to create new note collections or open existing folders",
+        "Reading view hides markdown syntax for easier reading",
+        "Source mode shows all markdown syntax when editing",
+        "Files changed outside the app sync automatically with the editor",
+        "Better validation when renaming notes to prevent duplicates and invalid characters",
+        "Refresh from file command (Cmd/Ctrl+R) to reload notes from disk"
+      ],
+      "improvements": [
+        "Cleaner editor header with better navigation controls",
+        "Search now cleans markdown formatting for better matching",
+        "Auto-save happens faster and more reliably",
+        "Window transparency can be adjusted in settings",
+        "The Developer and Examples menubar tabs have been removed",
+        "Changed duplicate note shortcut to Cmd+Shift+D to avoid conflicts",
+        "Fixed selection highlighting for trailing whitespace",
+        "Fixed markdown syntax being shown in hybrid mode even if the editor wasn't focused",
+        "Fixed a crash that occurs when no notes are open",
+        "Better handling of Enter and Backspace in markdown lists (experimental)",
+        "Setting to enable indent guides (experimental)"
+      ],
+      "other": [
+        "Notes from previous versions are not compatible and need to be recreated",
+        "Removed some menu items and simplified navigation"
+      ]
+    }
+  },
+  {
+    "version": "1.0.0-beta.5",
+    "releaseDate": "2025-09-06T00:00:00-04:00",
+    "highlights": "Adds tasks lists, bullet lists, improved text and caret styling, and syntax highlighting in code fences. Sidebar search now uses fuzzy finding, with smoother interactions and better scaling support.",
+    "changes": {
+      "features": [
+        "Bullet lists and task lists have updated visuals, with full task list support",
+        "Editor top navigation includes reading/editing toggle, recent tab navigation, and additional controls",
+        "Source mode can be enabled from settings or the navigation dropdown to view raw Markdown",
+        "Links are highlighted; autolinks and masked links open with Cmd/Ctrl + click",
+        "New font set added",
+        "Settings and new note button are located at the bottom of the sidebar",
+        "Code fences support syntax highlighting when a language specifier is present"
+      ],
+      "improvements": [
+        "Editor border is removed when both sidebar and tab bar are hidden",
+        "Sidebar note search now uses fuzzy finding",
+        "Closing the theme modal reopens the settings modal",
+        "Sidebar notes have a press animation",
+        "Settings sidebar buttons shrink on press",
+        "Zoom scaling improved, with horizontal scrolling when needed",
+        "Sidebar animates when toggled",
+        "Text selection and caret have been restyled",
+        "Find and replace modal now floats",
+        "New notes no longer include placeholder content",
+        "Sidebar notes feature a context menu instead of a dropdown",
+        "Base text size in the editor increased for improved legibility",
+        "Sidebar and tab bar toggling works correctly",
+        "Autoclosing behaves correctly when pairs are deleted and retyped",
+        "Ghost selection no longer appears on window blur",
+        "Traffic lights retain their position after window resize",
+        "Themes are properly applied on app launch",
+        "Navigation no longer retraces unexpectedly"
+      ],
+      "other": ["Notifications have been removed"]
+    }
+  },
+  {
+    "version": "1.0.0-beta.4",
+    "releaseDate": "2025-08-13T00:00:00-04:00",
+    "highlights": "This update focuses on the appearance and visuals of Plume, introducing a new theme editor, revamped color system, enhanced find & replace functionality, and improved editor capabilities.",
+    "changes": {
+      "features": [
+        "Added new theme editor to preview themes with live preview",
+        "Clickable preview indicator that opens theme editor directly",
+        "Remapped entire app to new color system with more granular tokens",
+        "Made the tab bar togglable (⌥⌘T)",
+        "Completely redesigned the find and replace UI",
+        "Added preserve case option in find & replace",
+        "Independent folding controls for headings and indented content",
+        "Dynamic reconfiguration of editor extensions without restart"
+      ],
+      "improvements": [
+        "Polished changelog UI with better spacing and typography",
+        "Enhanced find & replace with better keyboard shortcuts and navigation",
+        "Improved theme preview state management and cleanup",
+        "Better handling of editor fold state changes",
+        "Reimplement copying, cutting, and pasting (removed in 1.0.0-beta.3)",
+        "Fix positioning of heading folds when no whitespace or text followed the heading mark",
+        "Handle the new tab button properly again when the tab bar overflows",
+        "Fix markdown header hiding for empty headers"
+      ]
+    }
+  },
+  {
+    "version": "1.0.0-beta.3",
+    "releaseDate": "2025-08-12T00:00:00-04:00",
+    "highlights": "This update brings new editor settings, improved drag behavior, and enhanced sidebar interactions for a better writing experience.",
+    "changes": {
+      "features": [
+        "Added show folds in gutter setting",
+        "Added indent guides setting",
+        "Added spell check setting",
+        "Added confirm file deletion setting"
+      ],
+      "improvements": [
+        "Changed draggable region from top 12px of window to empty space in sidebar and tab bar",
+        "Made sidebar items shrink on press to align behavior with tab bar",
+        "Fixed ampersands (&) not showing in the menubar (File > Recent Notes)",
+        "Fixed the muted text color in the catppuccin theme",
+        "Fixed padding on sidebar drop menu trigger",
+        "Removed the ability to comment out lines"
+      ]
+    }
+  }
+]
