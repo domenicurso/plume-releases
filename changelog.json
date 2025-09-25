@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.0.0-the-newest-dummy",
+    "releaseDate": "2069-04-21T00:00:00-04:00",
+    "changes": {
+      "features": ["New dummy v2"]
+    }
+  },
+  {
     "version": "1.0.0-dummy",
     "releaseDate": "2069-04-20T00:00:00-04:00",
     "changes": {
