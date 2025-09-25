@@ -1,26 +1,5 @@
 [
   {
-    "version": "1.0.0-the-newer-newest-dummy",
-    "releaseDate": "2069-04-22T00:00:00-04:00",
-    "changes": {
-      "features": ["Newest new dummy v3"]
-    }
-  },
-  {
-    "version": "1.0.0-the-newest-dummy",
-    "releaseDate": "2069-04-21T00:00:00-04:00",
-    "changes": {
-      "features": ["New dummy v2"]
-    }
-  },
-  {
-    "version": "1.0.0-dummy",
-    "releaseDate": "2069-04-20T00:00:00-04:00",
-    "changes": {
-      "features": ["Dummy"]
-    }
-  },
-  {
     "version": "1.0.0-beta.8",
     "releaseDate": "2025-09-XXT00:00:00-04:00",
     "highlights": "Introduces a new updater that supports automatic updates without having to reinstall the application, along with a new nifty changes and improvements.",
