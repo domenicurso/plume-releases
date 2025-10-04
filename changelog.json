@@ -9,7 +9,8 @@
         "Onboarding flow now restricts the window size for better user experience",
         "Fixed a bug where date groupings in the sidebar were improperly ordered",
         "Respect UI scale for icons and certain elements",
-        "The changelog is now fetched from GitHub, so even versions newer than the current version are displayed"
+        "The changelog is now fetched from GitHub, so even versions newer than the current version are displayed",
+        "Made the editor top bar act as a drag region to move the window"
       ]
     }
   },
