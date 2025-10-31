@@ -1,26 +1,11 @@
 [
   {
-    "version": "1.0.0-beta.9",
-    "releaseDate": "2025-09-XXT00:00:00-04:00",
-    "highlights": "Introduces Plume Assist, a quiet, contextual intelligence suite that helps you think, not chat. Plume Assist is a new kind of intelligence that enhances clarity and focus without ever trying to replace your creativity. Plume's vision for AI has always been about subtle help, not authorship. You write; Plume simply helps you think more clearly.",
-    "changes": {
-      "features": [
-        "Plume Assist adds subtle, context-aware tools that organize, refine, and reshape your notes while you write.",
-        "Auto-categorizing and smart titling make your Troves feel naturally organized without any manual setup.",
-        "New rewriting and focusing options help polish your writing without changing your voice.",
-        "Smart Paste automatically cleans and summarizes copied text, preserving structure and tone.",
-        "Focus Lens highlights the most meaningful lines in your notes, helping you see what matters most."
-      ]
-    }
-  },
-  {
     "version": "1.0.0-beta.8",
     "releaseDate": "2025-09-XXT00:00:00-04:00",
     "highlights": "Introduces a new updater that supports automatic updates without having to reinstall the application, along with a new nifty changes and improvements.",
     "changes": {
       "features": [
-        "Plume is now powered by a new updater that supports automatic updates without having to reinstall the application",
-        "Added licensing system to ensure secure and legal usage"
+        "Plume is now powered by a new updater that supports automatic updates without having to reinstall the application"
       ],
       "improvements": [
         "Onboarding flow now restricts the window size for better user experience",
@@ -28,7 +13,9 @@
         "Respect UI scale for icons and certain elements",
         "The changelog is now fetched from GitHub, so even versions newer than the current version are displayed",
         "Made the editor top bar act as a drag region to move the window",
-        "The type scale has been improved for better readability"
+        "The type scale has been improved for better readability",
+        "Added regex replace placeholders ($1, $2, etc.) to the search and replace modal",
+        "The word and character count now show the word and character counts for selected text"
       ]
     }
   },
