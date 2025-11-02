@@ -15,7 +15,8 @@
         "Made the editor top bar act as a drag region to move the window",
         "The type scale has been improved for better readability",
         "Added regex replace placeholders ($1, $2, etc.) to the search and replace modal",
-        "The word and character count now show the word and character counts for selected text"
+        "The word and character count now show the word and character counts for selected text",
+        "Improved date sorting in the sidebar"
       ]
     }
   },
