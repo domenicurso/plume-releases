@@ -5,18 +5,24 @@
     "highlights": "Introduces a new updater that supports automatic updates without having to reinstall the application, along with a new nifty changes and improvements.",
     "changes": {
       "features": [
-        "Plume is now powered by a new updater that supports automatic updates without having to reinstall the application"
+        "Plume is now powered by a new updater that supports automatic updates without having to reinstall the application",
+        "The Changelog dialog now fetches the latest release notes from a remote source",
+        "The Editor status bar now displays the word and character count for the current text selection",
+        "Added a new Shortcuts dialog to view and manage keyboard shortcuts"
       ],
       "improvements": [
         "Onboarding flow now restricts the window size for better user experience",
-        "Fixed a bug where date groupings in the sidebar were improperly ordered",
-        "Respect UI scale for icons and certain elements",
-        "The changelog is now fetched from GitHub, so even versions newer than the current version are displayed",
-        "Made the editor top bar act as a drag region to move the window",
+        "Improved the logic for grouping notes in the sidebar by date",
+        "Numerous minor UI adjustments, including standardizing icon sizing and polishing transition effects in the Sidebar and Tabs",
+        "Tabs now have a distinct visual style when being reordered",
         "The type scale has been improved for better readability",
+        "Made the editor top bar act as a drag region to move the window",
         "Added regex replace placeholders ($1, $2, etc.) to the search and replace modal",
-        "The word and character count now show the word and character counts for selected text",
-        "Improved date sorting in the sidebar"
+        "The default window size was increased from 900x800 to 1300x900"
+      ],
+      "developer": [
+        "The old \"markdownHider\" plugin has been deprecated and replaced with a new \"richView\" plugin",
+        "Significant refactoring to reorganize core logic, including moving Trove and editor plugin files into new, dedicated directories"
       ]
     }
   },
