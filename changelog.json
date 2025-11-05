@@ -2,7 +2,7 @@
   {
     "version": "1.0.0-beta.8",
     "releaseDate": "2025-09-XXT00:00:00-04:00",
-    "highlights": "Introduces a new updater that supports automatic updates without having to reinstall the application, along with a new nifty changes and improvements.",
+    "highlights": "Introduces a new updater that supports automatic updates without having to reinstall the application, alongside a new Keyboard Shortcut editor and an overall better user experience.",
     "changes": {
       "features": [
         "Plume is now powered by a new updater that supports automatic updates without having to reinstall the application",
