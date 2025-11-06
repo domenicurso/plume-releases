@@ -2,4 +2,4 @@
 
 # Plume Releases
 
-This repository contains official builds of all stable release and public beta versions for all platforms of Plume. This repository does **NOT** contain source code or pilot (private beta) builds.
+This repository contains official builds of all stable release and public beta versions for all platforms of Plume. This repository does **NOT** contain source code for Plume.
