@@ -18,7 +18,8 @@
         "The type scale has been improved for better readability",
         "Made the editor top bar act as a drag region to move the window",
         "Added regex replace placeholders ($1, $2, etc.) to the search and replace modal",
-        "The default window size was increased from 900x800 to 1300x900"
+        "The default window size was increased from 900x800 to 1300x900",
+        "Made it possible to restart the onboarding flow from the menu bar or by keyboard shortcut"
       ],
       "developer": [
         "The old \"markdownHider\" plugin has been deprecated and replaced with a new \"richView\" plugin",
