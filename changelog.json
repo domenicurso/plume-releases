@@ -8,7 +8,8 @@
         "Plume is now powered by a new updater that supports automatic updates without having to reinstall the application",
         "The Changelog dialog now fetches the latest release notes from a remote source",
         "The Editor status bar now displays the word and character count for the current text selection",
-        "Added a new Shortcuts dialog to view and manage keyboard shortcuts"
+        "Added a new Shortcuts dialog to view and manage keyboard shortcuts",
+        "Adds robust spellchecking, grammar correction, and other text suggestions"
       ],
       "improvements": [
         "Onboarding flow now restricts the window size for better user experience",
