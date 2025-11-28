@@ -2,14 +2,12 @@
   {
     "version": "1.0.0-beta.8",
     "releaseDate": "2025-09-XXT00:00:00-04:00",
-    "highlights": "Introduces a new updater that supports automatic updates without having to reinstall the application, alongside a new Keyboard Shortcut editor and an overall better user experience.",
+    "highlights": "Introduces a new Keyboard Shortcut editor and an overall better user experience.",
     "changes": {
       "features": [
-        "Plume is now powered by a new updater that supports automatic updates without having to reinstall the application",
         "The Changelog dialog now fetches the latest release notes from a remote source",
         "The Editor status bar now displays the word and character count for the current text selection",
-        "Added a new Shortcuts dialog to view and manage keyboard shortcuts",
-        "Adds robust spellchecking, grammar correction, and other text suggestions"
+        "Added a new Shortcuts dialog to view and manage keyboard shortcuts"
       ],
       "improvements": [
         "Onboarding flow now restricts the window size for better user experience",
@@ -24,7 +22,8 @@
       ],
       "developer": [
         "The old \"markdownHider\" plugin has been deprecated and replaced with a new \"richView\" plugin",
-        "Significant refactoring to reorganize core logic, including moving Trove and editor plugin files into new, dedicated directories"
+        "Significant refactoring to reorganize core logic, including moving Trove and editor plugin files into new, dedicated directories",
+        "Started work on implementing the new Carta editor, currently available behind a feature flag"
       ]
     }
   },
