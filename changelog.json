@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.0.0-beta.9",
+    "releaseDate": "none",
+    "changes": {
+      "improvements": ["UI will now show even when a trove is loading"]
+    }
+  },
+  {
     "version": "1.0.0-beta.8",
     "releaseDate": "2025-11-27T00:00:00-04:00",
     "highlights": "Introduces a new Keyboard Shortcut editor and an overall better user experience.",
