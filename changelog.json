@@ -1,28 +1,31 @@
 [
   {
     "version": "1.0.0-beta.9",
-    "releaseDate": "none",
-    "highlights": "This release streamlines the application by removing local AI components, introduces the foundation for the new Carta editor, and refines the settings and shortcut experience.",
+    "releaseDate": "TBD",
+    "highlights": "This release introduces the foundation of the new Carta editor and delivers broad refinements to navigation, shortcuts, and overall app polish.",
     "changes": {
       "features": [
-        "Added a new \"What's New\" dialog to highlight key changes in each version",
+        "Added a \"What’s New\" dialog to surface key changes in each release",
         "Introduced the experimental Carta editor engine (available under Feature Flags)",
-        "Added shortcut cycling for Color Scheme (Cmd+Shift+T), Editing Mode (Cmd+Shift+E), and Default View (Cmd+Shift+V)",
-        "Consolidated \"Open...\" actions into a single submenu in the command palette"
+        "Expanded shortcut support with new cycling actions and improved command palette organization"
       ],
       "improvements": [
-        "Removed local AI (Llama) integration and Spellcheck to reduce app size and complexity",
-        "The application UI now loads immediately with a spinner in the sidebar while notes are fetching",
-        "Improved note title rendering in the sidebar with conditional fading for long titles",
-        "Renamed \"Experimental\" settings to \"Feature Flags\" and added detailed descriptions",
-        "Added an \"Update Plume\" section in General settings",
+        "Removed local AI (Llama) and spellcheck to reduce app size and complexity",
+        "The sidebar now displays a loading state while notes are being fetched",
+        "Prevented note titles from fading when the full title fits",
+        "Renamed \"Experimental\" settings to \"Feature Flags\" and added clearer descriptions",
+        "Added an \"Update Plume\" section to General settings",
         "Refreshed the changelog UI with improved layout and styling",
-        "Removed hover animations and swapped them out for 0ms transitions",
-        "Renamed certain actions in the shortcuts menu for better clarity"
+        "Replaced hover animations with instant (0ms) transitions",
+        "Dialogs now close when their open shortcut is pressed again",
+        "Added a boot animation during application startup",
+        "Fixed overlap during the onboarding crossfade transition",
+        "Smoothed dialog open and close animations"
       ],
       "developer": [
-        "Implemented strict linting rules for relative imports",
-        "Significant architectural work on the new Carta editor core; soon, third-party plugins will be supported"
+        "Enforced strict linting rules for relative imports",
+        "Continued major architectural work on the Carta editor core, with third-party plugin support coming soon",
+        "Added a shortcut for toggling developer tools"
       ]
     }
   },
