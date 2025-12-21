@@ -2,7 +2,7 @@
   {
     "version": "1.0.0-beta.9",
     "releaseDate": "TBD",
-    "highlights": "This release introduces the foundation of the new Carta editor and delivers broad refinements to navigation, shortcuts, and overall app polish.",
+    "highlights": "This release lays the foundation for the new Carta editor, improves shortcuts and navigation, and delivers broad UI and polish improvements across the app.",
     "changes": {
       "features": [
         "Added a \"What’s New\" dialog to surface key changes in each release",
