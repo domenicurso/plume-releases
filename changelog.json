@@ -32,6 +32,9 @@
         "Initialized all dialogs as closed by default",
         "Stopped the app from completely overlapping onboarding during transitions",
         "Used the proper macOS traffic-light positioning API"
+      ],
+      "other": [
+        "Theme support has been removed, but it will be reintroduced in a future release"
       ]
     }
   },
