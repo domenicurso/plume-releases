@@ -6,13 +6,16 @@
     "changes": {
       "features": [
         "Added a \"What’s New\" dialog to surface key changes in each release",
-        "Introduced the experimental Carta editor engine (available under Feature Flags) and expanded its core capabilities (rendering, input, selection, markdown features, tables, code blocks, LaTeX, and editor tooling)",
+        "Introduced the experimental Carta editor engine (available under Feature Flags)",
+        "Added a rich table editor, support for horizontal rules, blockquotes, highlighting, underlining, and more, ",
+        "Reimplemented spellcheck using a lightweight dictionary search and added personal dictionary and the ability to ignore suggestions",
         "Expanded shortcut support with new cycling actions and improved command palette organization",
         "Added a boot animation during application startup",
         "Added a shortcut for toggling developer tools"
       ],
       "improvements": [
-        "Removed local AI (Llama) and spellcheck to reduce app size and complexity",
+        "Removed LLaMa spellcheck to reduce app size and complexity",
+        "Fixed a bug where undoing after opening a note would clear the note",
         "The sidebar now displays a loading state while notes are being fetched",
         "Prevented note titles from fading when the full title fits",
         "Added overflow detection for long note titles in the Sidebar",
@@ -61,8 +64,7 @@
       ],
       "developer": [
         "The old \"markdownHider\" plugin has been deprecated and replaced with a new \"richView\" plugin",
-        "Significant refactoring to reorganize core logic, including moving Trove and editor plugin files into new, dedicated directories",
-        "Started work on implementing the new Carta editor, currently available behind a feature flag"
+        "Significant refactoring to reorganize core logic, including moving Trove and editor plugin files into new, dedicated directories"
       ]
     }
   },
