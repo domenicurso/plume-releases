@@ -7,7 +7,11 @@
       "features": [
         "Added a \"What’s New\" dialog to surface key changes in each release",
         "Introduced the experimental Carta editor engine (available under Feature Flags)",
-        "Added a rich table editor, support for horizontal rules, blockquotes, highlighting, underlining, and more, ",
+        "Added a rich table editor",
+        "Added support for horizontal rules",
+        "Added support for blockquotes",
+        "Added support for highlight, underline, superscript, and subscript emphasis",
+        "Introduced text replacement for turning common patterns into special symbols",
         "Reimplemented spellcheck using a lightweight dictionary search and added personal dictionary and the ability to ignore suggestions",
         "Expanded shortcut support with new cycling actions and improved command palette organization",
         "Added a boot animation during application startup",
@@ -34,7 +38,15 @@
         "Restricted dialog overflow scrolling to the vertical axis only",
         "Initialized all dialogs as closed by default",
         "Stopped the app from completely overlapping onboarding during transitions",
-        "Used the proper macOS traffic-light positioning API"
+        "Used the proper macOS traffic-light positioning API",
+        "Added support for a personal spellcheck dictionary",
+        "Added the ability to ignore spellcheck suggestions",
+        "Spellcheck can now return secondary suggestions",
+        "Improved autopairing for both brackets and Markdown emphasis markers",
+        "Implemented smart quotes for both single and double quotes",
+        "Fixed certain edge cases with note saving that could cause data loss",
+        "Improved language used by settings to be more intuitive",
+        "When text is selected, only the selected word and character counts are displayed"
       ],
       "other": [
         "Theme support has been removed, but it will be reintroduced in a future release"
