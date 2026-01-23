@@ -6,11 +6,13 @@
     "changes": {
       "features": [
         "Added a \"What’s New\" dialog to surface key changes in each release",
-        "Introduced the experimental Carta editor engine (available under Feature Flags)",
+        "Introduced the Carta editor engine, a lightweight editor engine that provides a rich set of features and performance improvements",
         "Added a rich table editor",
         "Added support for horizontal rules",
         "Added support for blockquotes",
         "Added support for highlight, underline, superscript, and subscript emphasis",
+        "Added inline and block-level LaTeX math rendering",
+        "Opened the editor API for third-party developers to build custom plugins",
         "Introduced text replacement for turning common patterns into special symbols",
         "Reimplemented spellcheck using a lightweight dictionary search",
         "Expanded shortcut support with new cycling actions and improved command palette organization",
@@ -44,10 +46,16 @@
         "Implemented smart quotes for both single and double quotes",
         "Fixed certain edge cases with note saving that could cause data loss",
         "Improved language used by settings to be more intuitive",
-        "When text is selected, only the selected word and character counts are displayed"
+        "When text is selected, only the selected word and character counts are displayed",
+        "Added context menus for the line number and fold gutters",
+        "Updated the sidebar context menu and editor context menu to use the native menus",
+        "Added more actions to the sidebar context menu",
+        "Added more actions to the editor context menu",
+        "Added regex placeholder support when replacing text and using regex patterns"
       ],
       "other": [
-        "Theme support has been removed, but it will be reintroduced in a future release"
+        "Theme support has been removed, but it will be reintroduced in a future release",
+        "The legacy CodeMirror 6 editor engine has been removed in favor of the Carta editor engine"
       ]
     }
   },
