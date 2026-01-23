@@ -24,7 +24,7 @@
         "Fixed a bug where undoing after opening a note would clear the note",
         "The sidebar now displays a loading state while notes are being fetched",
         "Prevented note titles from fading when the full title fits",
-        "Renamed \"Experimental\" settings to \"Feature Flags\" and added clearer descriptions",
+        "Renamed \"Experimental\" settings to \"Developer\" and added clearer descriptions",
         "Added an \"Update Plume\" section to General settings",
         "Refreshed the changelog UI with improved layout and styling",
         "Updated changelog version messaging for clarity",
