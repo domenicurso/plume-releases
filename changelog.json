@@ -12,7 +12,8 @@
         "Expanded navigation and productivity features with new shortcut cycling actions, a reorganized command palette, a shortcut for toggling developer tools, and dialogs that close when their shortcut is triggered again",
         "Introduced a new \"What’s New\" dialog to surface key changes each release, alongside a refreshed changelog experience with clearer version messaging",
         "Added support for trove subfolders, enabled editing of .txt files, and introduced a dedicated image viewer for image files",
-        "Added a boot animation to improve perceived startup feedback"
+        "Added a boot animation to improve perceived startup feedback",
+        "Reworked sidebar search with exact per-file match counts, boolean operators, non-overlapping highlighted snippets, sortable results, and major performance gains via worker-based, streaming search"
       ],
       "improvements": [
         "Removed the LLaMa-based spellcheck system to reduce application size and overall complexity",
