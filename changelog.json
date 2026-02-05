@@ -1,7 +1,13 @@
 [
   {
-    "version": "1.0.0-beta.9",
+    "version": "1.0.0-beta.10",
     "releaseDate": "TBD",
+    "highlights": "",
+    "changes": {}
+  },
+  {
+    "version": "1.0.0-beta.9",
+    "releaseDate": "2026-02-04T00:00:00-04:00",
     "highlights": "This release marks a major milestone for Plume, debuting the Carta editor with near-complete legacy feature parity, expanded formatting and extensibility, significantly improved spellcheck and text handling, and a sweeping pass of UI, dialog, and interaction polish across the app.",
     "changes": {
       "features": [
