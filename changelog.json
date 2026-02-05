@@ -22,7 +22,7 @@
         "Reworked sidebar search with exact per-file match counts, boolean operators, non-overlapping highlighted snippets, sortable results, and major performance gains via worker-based, streaming search"
       ],
       "improvements": [
-        "Removed the LLaMa-based spellcheck system to reduce application size and overall complexity",
+        "Removed the LLaMA-based spellcheck system to reduce application size and overall complexity",
         "Resolved an issue where undoing immediately after opening a note could clear its contents, along with other edge cases that could lead to note data loss",
         "Improved sidebar behavior and feedback, including a loading state while notes are fetched, expanded context menu actions, and native macOS menu usage",
         "Refined editor context menus by adopting native menu implementations and expanding the available action set",
