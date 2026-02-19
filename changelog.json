@@ -6,6 +6,8 @@
     "changes": {
       "features": [
         "Added a dedicated Sidebar settings tab with practical defaults for file tree sorting, search result sorting, default search expansion behavior, and folder pinning",
+        "Added new Files & Folders settings for confirming file deletes, confirming folder deletes, default folder-only delete behavior, default new file location, and deletion destination",
+        "Added a flexible folder delete flow that lets you either delete the folder and its contents or delete just the folder while keeping its contents",
         "Added a dedicated Plugin Settings dialog with per-plugin controls and generated setting fields (toggle, text, number, select, and action rows)",
         "Added a capability-based plugin permissions panel that explains, in plain language, what each plugin can access or modify before you trust it",
         "Reworked Settings > Plugins to show real official plugin entries with live enable toggles and one-click access to plugin-specific settings",
@@ -20,6 +22,8 @@
         "Search results can now default to collapsed or expanded based on your saved sidebar preference",
         "Sidebar file tree sorting can now interleave folders and files by the active sort key when folder pinning is disabled",
         "Idle sidebar layout is now more compact by removing redundant file-count status when not searching",
+        "Delete confirmations now use in-app dialogs with clearer, destination-aware copy so you can see exactly where deleted items will go",
+        "Folder delete confirmation now happens in a single step, and when folder confirmation is disabled your selected default action is applied immediately",
         "Made tab switching substantially faster by keeping open tab content mounted in the background instead of remounting editors on every switch",
         "Improved continuity when returning to tabs by preserving more editor/viewer state in inactive tabs",
         "Scoped editor update handling to the active tab so hidden tabs do less background work and avoid focus/input interference",
@@ -38,6 +42,9 @@
         "Migrated app-side Carta usage toward package-based @carta modules (core/react/view-dom/plugin-sdk/plugins-official) and reduced reliance on legacy local runtime internals",
         "Replaced legacy public editor event-bus patterns with v2 transaction/lifecycle paths and cleaner host service boundaries",
         "Introduced store-backed plugin settings APIs (typed reads/subscriptions, updatePluginSetting, updatePluginEnabled) and migrated legacy editor flags into plugin value storage",
+        "Expanded trove file operation APIs to support configurable create/delete behavior (create target folder selection and delete location routing)",
+        "Added an internal command for moving files and folders to the OS trash and wired JS/Rust file-system layers to use it when configured",
+        "Implemented deterministic folder-only delete handling with conflict-safe child relocation and metadata cleanup to prevent stuck directory removals",
         "Migrated official extensions to the v2 defineExtension path with centralized extension compilation and manifest-driven metadata/settings handling",
         "Added compatibility resolution for plugins (engine semver checks, dependency validation, duplicate detection, and dependency-order sorting)",
         "Added host active-state controls so inactive editor/viewer surfaces can suspend unnecessary processing",
