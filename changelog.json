@@ -5,6 +5,7 @@
     "highlights": "This beta introduces a much deeper plugin experience (with per-plugin settings and permission visibility), significantly improves tab/editor responsiveness, and ships a major stability pass across Carta runtime behavior.",
     "changes": {
       "features": [
+        "Added a dedicated Sidebar settings tab with practical defaults for file tree sorting, search result sorting, default search expansion behavior, and folder pinning",
         "Added a dedicated Plugin Settings dialog with per-plugin controls and generated setting fields (toggle, text, number, select, and action rows)",
         "Added a capability-based plugin permissions panel that explains, in plain language, what each plugin can access or modify before you trust it",
         "Reworked Settings > Plugins to show real official plugin entries with live enable toggles and one-click access to plugin-specific settings",
@@ -14,6 +15,11 @@
         "Added a richer Restricted Mode explainer with expanded security guidance before enabling community plugins"
       ],
       "improvements": [
+        "Sidebar file tree sorting is now persisted as a default preference and can be adjusted directly from the idle sidebar header controls",
+        "Sidebar search result sorting is now persisted as a default preference and can be adjusted from search result controls without resetting between sessions",
+        "Search results can now default to collapsed or expanded based on your saved sidebar preference",
+        "Sidebar file tree sorting can now interleave folders and files by the active sort key when folder pinning is disabled",
+        "Idle sidebar layout is now more compact by removing redundant file-count status when not searching",
         "Made tab switching substantially faster by keeping open tab content mounted in the background instead of remounting editors on every switch",
         "Improved continuity when returning to tabs by preserving more editor/viewer state in inactive tabs",
         "Scoped editor update handling to the active tab so hidden tabs do less background work and avoid focus/input interference",
@@ -29,6 +35,9 @@
         "Hardened startup and action initialization sequencing so boot readiness progresses more reliably"
       ],
       "developer": [
+        "Introduced first-class `settings.sidebar.*` schema keys (`defaultFileTreeSort`, `defaultSearchSort`, `collapseSearchResultsByDefault`, `pinFoldersToTop`) with typed `SettingKeys`/`SettingValue` support",
+        "Added migration logic to carry legacy `appearance.sidebarFileTreeSort` and `appearance.sidebarSearchSort` values into the new sidebar settings model while preserving explicit new-key values",
+        "Refactored sidebar file-tree sort utilities to support optional folder pinning and shared mode-based sorting by name, updated timestamp, and created timestamp",
         "Migrated app-side Carta usage toward package-based @carta modules (core/react/view-dom/plugin-sdk/plugins-official) and reduced reliance on legacy local runtime internals",
         "Replaced legacy public editor event-bus patterns with v2 transaction/lifecycle paths and cleaner host service boundaries",
         "Introduced store-backed plugin settings APIs (typed reads/subscriptions, updatePluginSetting, updatePluginEnabled) and migrated legacy editor flags into plugin value storage",
