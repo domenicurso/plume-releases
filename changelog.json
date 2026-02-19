@@ -35,9 +35,6 @@
         "Hardened startup and action initialization sequencing so boot readiness progresses more reliably"
       ],
       "developer": [
-        "Introduced first-class `settings.sidebar.*` schema keys (`defaultFileTreeSort`, `defaultSearchSort`, `collapseSearchResultsByDefault`, `pinFoldersToTop`) with typed `SettingKeys`/`SettingValue` support",
-        "Added migration logic to carry legacy `appearance.sidebarFileTreeSort` and `appearance.sidebarSearchSort` values into the new sidebar settings model while preserving explicit new-key values",
-        "Refactored sidebar file-tree sort utilities to support optional folder pinning and shared mode-based sorting by name, updated timestamp, and created timestamp",
         "Migrated app-side Carta usage toward package-based @carta modules (core/react/view-dom/plugin-sdk/plugins-official) and reduced reliance on legacy local runtime internals",
         "Replaced legacy public editor event-bus patterns with v2 transaction/lifecycle paths and cleaner host service boundaries",
         "Introduced store-backed plugin settings APIs (typed reads/subscriptions, updatePluginSetting, updatePluginEnabled) and migrated legacy editor flags into plugin value storage",
