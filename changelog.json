@@ -2,8 +2,45 @@
   {
     "version": "1.0.0-beta.10",
     "releaseDate": "TBD",
-    "highlights": "",
-    "changes": {}
+    "highlights": "This beta introduces a much deeper plugin experience (with per-plugin settings and permission visibility), significantly improves tab/editor responsiveness, and ships a major stability pass across Carta runtime behavior.",
+    "changes": {
+      "features": [
+        "Added a dedicated Plugin Settings dialog with per-plugin controls and generated setting fields (toggle, text, number, select, and action rows)",
+        "Added a capability-based plugin permissions panel that explains, in plain language, what each plugin can access or modify before you trust it",
+        "Reworked Settings > Plugins to show real official plugin entries with live enable toggles and one-click access to plugin-specific settings",
+        "Added Undo and Redo buttons directly to the editor top bar for quicker mouse-first editing",
+        "Expanded default Smart Replacements with a much larger conversion set, including legal symbols, additional fractions, arrow variants, and dash replacements",
+        "Added plugin dependency and compatibility-aware loading, so incompatible or missing dependency plugins are filtered before activation",
+        "Added a richer Restricted Mode explainer with expanded security guidance before enabling community plugins"
+      ],
+      "improvements": [
+        "Made tab switching substantially faster by keeping open tab content mounted in the background instead of remounting editors on every switch",
+        "Improved continuity when returning to tabs by preserving more editor/viewer state in inactive tabs",
+        "Scoped editor update handling to the active tab so hidden tabs do less background work and avoid focus/input interference",
+        "Reduced plugin-toggle jank across mounted tabs and improved responsiveness when changing plugin state",
+        "Improved Carta rendering efficiency by moving to dirty-subtree DOM updates instead of broader refreshes",
+        "Removed viewport virtualization paths that were causing edge-case instability and tightened incremental update behavior",
+        "Improved markdown reliability by normalizing tables during setup and isolating auto-convert state handling",
+        "Improved math refresh behavior so equation decorations recompute correctly when source visibility mode changes",
+        "Improved plugin lifecycle cleanup during editor replacement/teardown to reduce stale observers and callback noise",
+        "Resolved the Cmd/Ctrl+R reload-vs-refresh conflict so shortcut behavior is more consistent",
+        "Unified and polished several text-input/dialog flows (including trove creation and replacement-editing copy)",
+        "Removed vibrancy/transparency window wiring in favor of stable background rendering for cleaner cross-platform visuals",
+        "Hardened startup and action initialization sequencing so boot readiness progresses more reliably"
+      ],
+      "developer": [
+        "Migrated app-side Carta usage toward package-based @carta modules (core/react/view-dom/plugin-sdk/plugins-official) and reduced reliance on legacy local runtime internals",
+        "Replaced legacy public editor event-bus patterns with v2 transaction/lifecycle paths and cleaner host service boundaries",
+        "Introduced store-backed plugin settings APIs (typed reads/subscriptions, updatePluginSetting, updatePluginEnabled) and migrated legacy editor flags into plugin value storage",
+        "Migrated official extensions to the v2 defineExtension path with centralized extension compilation and manifest-driven metadata/settings handling",
+        "Added compatibility resolution for plugins (engine semver checks, dependency validation, duplicate detection, and dependency-order sorting)",
+        "Added host active-state controls so inactive editor/viewer surfaces can suspend unnecessary processing",
+        "Added startup profiling milestones with per-step timing output for settings/startup/shell/troves/files/actions",
+        "Refactored build/dev workflows into dedicated scripts and expanded --cartaLayout development flow",
+        "Pinned JavaScript Tauri package versions to match Rust crate minor versions for safer runtime alignment",
+        "Removed legacy Rust vibrancy setup and related module wiring"
+      ]
+    }
   },
   {
     "version": "1.0.0-beta.9",
