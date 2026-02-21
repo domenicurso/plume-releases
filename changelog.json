@@ -14,7 +14,12 @@
         "Added Undo and Redo buttons directly to the editor top bar for quicker mouse-first editing",
         "Expanded default Smart Replacements with a much larger conversion set, including legal symbols, additional fractions, arrow variants, and dash replacements",
         "Added plugin dependency and compatibility-aware loading, so incompatible or missing dependency plugins are filtered before activation",
-        "Added a richer Restricted Mode explainer with expanded security guidance before enabling community plugins"
+        "Added a richer Restricted Mode explainer with expanded security guidance before enabling community plugins",
+        "Added sidebar-to-workspace tab dragging, including directional pane drop targets and tab-bar insertion targets",
+        "Added a floating drag preview under the cursor for both existing tabs and tabs dragged from the sidebar",
+        "Added trove context actions in Trove Browser (right-click): Rename and Delete with confirmation",
+        "Trove Browser now uses each trove's configured name from trove.json instead of inferring from folder path",
+        "When no tabs are open, the content area now renders the pane tree with a single empty pane instead of a bare editor"
       ],
       "improvements": [
         "Sidebar file tree sorting is now persisted as a default preference and can be adjusted directly from the idle sidebar header controls",
@@ -36,7 +41,19 @@
         "Resolved the Cmd/Ctrl+R reload-vs-refresh conflict so shortcut behavior is more consistent",
         "Unified and polished several text-input/dialog flows (including trove creation and replacement-editing copy)",
         "Removed vibrancy/transparency window wiring in favor of stable background rendering for cleaner cross-platform visuals",
-        "Hardened startup and action initialization sequencing so boot readiness progresses more reliably"
+        "Hardened startup and action initialization sequencing so boot readiness progresses more reliably",
+        "Show confirmation dialog when resetting settings to their defaults",
+        "Updated tab hover visuals to mirror the active-tab silhouette while preserving hover-specific surface styling",
+        "Refined tab divider visibility behavior during drag interactions",
+        "Prevented editor text selection during sidebar-origin tab drag to match tab-bar drag behavior",
+        "When focusing another pane, selections in non-focused panes are now cleared",
+        "Adjusted split resize-handle hit targeting to be more forgiving while preserving visible handle layout",
+        "Improved pane drop-target resolution around split handles so directional targets (left/right/bottom/tab bar) trigger correctly",
+        "Center fallback drops now insert tabs at the computed tab index instead of always appending",
+        "Improved trove create-path validation/normalization and corrected create-path preview formatting",
+        "Improved trove path truncation behavior in the browser list to preserve meaningful suffix context",
+        "Fixed Vite Fast Refresh invalidation issues tied to MenuProvider export compatibility and circular invalidation",
+        "Fixed hot-reload initialization crash path causing \"Action system not initialized\""
       ],
       "developer": [
         "Migrated app-side Carta usage toward package-based @carta modules (core/react/view-dom/plugin-sdk/plugins-official) and reduced reliance on legacy local runtime internals",
@@ -51,7 +68,15 @@
         "Added startup profiling milestones with per-step timing output for settings/startup/shell/troves/files/actions",
         "Refactored build/dev workflows into dedicated scripts and expanded --cartaLayout development flow",
         "Pinned JavaScript Tauri package versions to match Rust crate minor versions for safer runtime alignment",
-        "Removed legacy Rust vibrancy setup and related module wiring"
+        "Removed legacy Rust vibrancy setup and related module wiring",
+        "Implemented workspace state persistence in .plume/workspace.json (open tabs, active/current tab, tab history, pane tree, focused pane, split ratios)",
+        "Added workspace hydration on trove open/switch and debounced persistence on workspace-relevant state changes",
+        "Added workspace payload sanitization/normalization for backward-compatible reads with normalized writes",
+        "Slimmed trove persistence schemas by removing redundant version fields and unused trove.json payload fields",
+        "Updated trove repair flow to repair trove.json in place (without reinitialization) to prevent accidental trove-name resets",
+        "Removed obsolete pane DnD debug plumbing",
+        "Refactored editor plugin-loader defaults to avoid maintaining a large in-memory default-values object",
+        "Reorganized actions/keybindings for tab/pane navigation (including direct tab 1-9 shortcuts and stack-based tab-back behavior)"
       ]
     }
   },
