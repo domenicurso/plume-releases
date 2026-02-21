@@ -5,23 +5,24 @@
     "highlights": "This beta introduces a much deeper plugin experience (with per-plugin settings and permission visibility), significantly improves tab/editor responsiveness, and ships a major stability pass across Carta runtime behavior.",
     "changes": {
       "features": [
+        "Added multipane workspace layout support with directional drop targets and automatic tab-bar insertion",
         "Added a dedicated Sidebar settings tab with practical defaults for file tree sorting, search result sorting, default search expansion behavior, and folder pinning",
         "Added new Files & Folders settings for confirming file deletes, confirming folder deletes, default folder-only delete behavior, default new file location, and deletion destination",
-        "Added a flexible folder delete flow that lets you either delete the folder and its contents or delete just the folder while keeping its contents",
+        "Reworked alert dialogs for deleting files and folders, resetting settings, and deleting troves",
         "Added a dedicated Plugin Settings dialog with per-plugin controls and generated setting fields (toggle, text, number, select, and action rows)",
         "Added a capability-based plugin permissions panel that explains, in plain language, what each plugin can access or modify before you trust it",
         "Reworked Settings > Plugins to show real official plugin entries with live enable toggles and one-click access to plugin-specific settings",
-        "Added Undo and Redo buttons directly to the editor top bar for quicker mouse-first editing",
-        "Expanded default Smart Replacements with a much larger conversion set, including legal symbols, additional fractions, arrow variants, and dash replacements",
-        "Added plugin dependency and compatibility-aware loading, so incompatible or missing dependency plugins are filtered before activation",
         "Added a richer Restricted Mode explainer with expanded security guidance before enabling community plugins",
         "Added sidebar-to-workspace tab dragging, including directional pane drop targets and tab-bar insertion targets",
-        "Added a floating drag preview under the cursor for both existing tabs and tabs dragged from the sidebar",
-        "Added trove context actions in Trove Browser (right-click): Rename and Delete with confirmation",
-        "Trove Browser now uses each trove's configured name from trove.json instead of inferring from folder path",
-        "When no tabs are open, the content area now renders the pane tree with a single empty pane instead of a bare editor"
+        "Added the ability to create folders, and reorganize files and folders straight from the sidebar file tree",
+        "Added breadcrumb-driven sidebar focus and inline title rename in the editor top bar",
+        "Added Undo and Redo buttons directly to the editor top bar for quicker mouse-first editing"
       ],
       "improvements": [
+        "Expanded default Smart Replacements with a much larger conversion set, including legal symbols, additional fractions, arrow variants, and dash replacements",
+        "Added plugin dependency and compatibility-aware loading, so incompatible or missing dependency plugins are filtered before activation",
+        "Trove Browser now uses each trove's configured name from trove.json instead of inferring from folder path",
+        "Added trove context actions in Trove Browser (right-click): Rename and Delete with confirmation",
         "Sidebar file tree sorting is now persisted as a default preference and can be adjusted directly from the idle sidebar header controls",
         "Sidebar search result sorting is now persisted as a default preference and can be adjusted from search result controls without resetting between sessions",
         "Search results can now default to collapsed or expanded based on your saved sidebar preference",
