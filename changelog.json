@@ -13,7 +13,7 @@
         "Added a capability-based plugin permissions panel that explains, in plain language, what each plugin can access or modify before you trust it",
         "Reworked Settings > Plugins to show real official plugin entries with live enable toggles and one-click access to plugin-specific settings",
         "Added a richer Restricted Mode explainer with expanded security guidance before enabling community plugins",
-        "Added sidebar-to-workspace tab dragging, including directional pane drop targets and tab-bar insertion targets",
+        "Added sidebar/tabbar-to-workspace tab dragging, including directional pane drop targets and tab-bar insertion targets",
         "Added the ability to create folders, and reorganize files and folders straight from the sidebar file tree",
         "Added breadcrumb-driven sidebar focus and inline title rename in the editor top bar",
         "Added Undo and Redo buttons directly to the editor top bar for quicker mouse-first editing"
