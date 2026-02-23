@@ -66,7 +66,8 @@
         "Improved trove path truncation behavior in the browser list to preserve meaningful suffix context",
         "Fixed Vite Fast Refresh invalidation issues tied to MenuProvider export compatibility and circular invalidation",
         "Fixed hot-reload initialization crash path causing \"Action system not initialized\"",
-        "Refactored Git sync commit preparation into a single staged-change normalization pipeline so ignored trove metadata and trash paths are handled consistently before commit"
+        "Refactored Git sync commit preparation into a single staged-change normalization pipeline so ignored trove metadata and trash paths are handled consistently before commit",
+        "Fixed an issue where editor autosave could lag by one keystroke, causing the most recent character not to save until another interaction"
       ],
       "developer": [
         "Migrated app-side Carta usage toward package-based @carta modules (core/react/view-dom/plugin-sdk/plugins-official) and reduced reliance on legacy local runtime internals",
