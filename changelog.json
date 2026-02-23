@@ -65,7 +65,8 @@
         "Improved trove create-path validation/normalization and corrected create-path preview formatting",
         "Improved trove path truncation behavior in the browser list to preserve meaningful suffix context",
         "Fixed Vite Fast Refresh invalidation issues tied to MenuProvider export compatibility and circular invalidation",
-        "Fixed hot-reload initialization crash path causing \"Action system not initialized\""
+        "Fixed hot-reload initialization crash path causing \"Action system not initialized\"",
+        "Refactored Git sync commit preparation into a single staged-change normalization pipeline so ignored trove metadata and trash paths are handled consistently before commit"
       ],
       "developer": [
         "Migrated app-side Carta usage toward package-based @carta modules (core/react/view-dom/plugin-sdk/plugins-official) and reduced reliance on legacy local runtime internals",
@@ -92,6 +93,7 @@
         "Introduced a provider-agnostic sync core, modularized git sync internals, and hardened sync strategy behavior around backups and commit metadata",
         "Refactored sync settings architecture to split persisted configuration from operational runtime state, with clear global-versus-trove policy enforcement",
         "Hardened git-sync edge cases around ignored trove metadata cleanup and staged deletion handling to prevent accidental re-adds and missed removals",
+        "Updated GitHub Cloud sync to evaluate each trove's .gitignore at runtime and remove ignored files that were previously tracked on remote so Git and GitHub providers stay aligned",
         "Reworked file-tree refresh internals to use microtask-coalesced scheduling and conditional catalog repair for faster sidebar update propagation"
       ]
     }
