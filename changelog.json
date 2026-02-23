@@ -13,10 +13,13 @@
         "Added a capability-based plugin permissions panel that explains, in plain language, what each plugin can access or modify before you trust it",
         "Reworked Settings > Plugins to show real official plugin entries with live enable toggles and one-click access to plugin-specific settings",
         "Added a richer Restricted Mode explainer with expanded security guidance before enabling community plugins",
-        "Added sidebar/tabbar-to-workspace tab dragging, including directional pane drop targets and tab-bar insertion targets",
         "Added the ability to create folders, and reorganize files and folders straight from the sidebar file tree",
         "Added breadcrumb-driven sidebar focus and inline title rename in the editor top bar",
-        "Added Undo and Redo buttons directly to the editor top bar for quicker mouse-first editing"
+        "Added Undo and Redo buttons directly to the editor top bar for quicker mouse-first editing",
+        "Added a git-backed trove backup workflow with provider-based sync foundations, including Git Remote and GitHub Cloud support paths with OAuth wiring",
+        "Added scoped sync settings so global defaults and per-trove behavior can be configured independently",
+        "Added workspace options for close-empty-pane behavior, max tabs per pane, split-pane behavior, and active-tab close behavior",
+        "Added a Reopen Closed Tab action and moved tab/pane controls into the navigation action group for faster keyboard navigation"
       ],
       "improvements": [
         "Expanded default Smart Replacements with a much larger conversion set, including legal symbols, additional fractions, arrow variants, and dash replacements",
@@ -51,6 +54,14 @@
         "Adjusted split resize-handle hit targeting to be more forgiving while preserving visible handle layout",
         "Improved pane drop-target resolution around split handles so directional targets (left/right/bottom/tab bar) trigger correctly",
         "Center fallback drops now insert tabs at the computed tab index instead of always appending",
+        "Improved tab continuity during file renames and moves by updating pane tabs in place while preserving editor instance state and reducing visual jitter",
+        "Significantly improved sidebar file-tree responsiveness by removing delayed refresh scheduling and reducing full catalog-repair work on the hot update path",
+        "Improved sync scheduling by re-anchoring autosync cadence after successful sync cycles for more predictable background behavior",
+        "Updated default close-pane shortcut behavior to avoid collisions and better match pane workflow expectations",
+        "Improved pane chrome behavior so full pane headers are hidden when the tab bar is disabled",
+        "Improved pane cleanup so empty panes can be closed automatically when the last tab is removed",
+        "Improved drag-and-drop feedback by unifying global preview overlays and refining sidebar-origin drag targeting",
+        "Improved window-control/tab-bar coexistence so traffic lights and tab bar spacing behave correctly",
         "Improved trove create-path validation/normalization and corrected create-path preview formatting",
         "Improved trove path truncation behavior in the browser list to preserve meaningful suffix context",
         "Fixed Vite Fast Refresh invalidation issues tied to MenuProvider export compatibility and circular invalidation",
@@ -77,7 +88,11 @@
         "Updated trove repair flow to repair trove.json in place (without reinitialization) to prevent accidental trove-name resets",
         "Removed obsolete pane DnD debug plumbing",
         "Refactored editor plugin-loader defaults to avoid maintaining a large in-memory default-values object",
-        "Reorganized actions/keybindings for tab/pane navigation (including direct tab 1-9 shortcuts and stack-based tab-back behavior)"
+        "Reorganized actions/keybindings for tab/pane navigation (including direct tab 1-9 shortcuts and stack-based tab-back behavior)",
+        "Introduced a provider-agnostic sync core, modularized git sync internals, and hardened sync strategy behavior around backups and commit metadata",
+        "Refactored sync settings architecture to split persisted configuration from operational runtime state, with clear global-versus-trove policy enforcement",
+        "Hardened git-sync edge cases around ignored trove metadata cleanup and staged deletion handling to prevent accidental re-adds and missed removals",
+        "Reworked file-tree refresh internals to use microtask-coalesced scheduling and conditional catalog repair for faster sidebar update propagation"
       ]
     }
   },
